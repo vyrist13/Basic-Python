@@ -12,7 +12,7 @@ pilih_menu=0
 greeting()
 while pilih_menu !=3:
     print()
-    pilih_menu=int(input("Pilih Menu: "))
+    pilih_menu=int(input("Pilih Menu (Angka 1-3): "))
     if pilih_menu==1:
         print()
         print("---Daftar Kontak---")
