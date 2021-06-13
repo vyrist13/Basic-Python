@@ -9,8 +9,8 @@ print(d)
 d["nama"]="Thoma"
 print(d)
 
-#for x in d:
-    #print(d)
+for x in d:
+    print(d)
 
 
 d=[]

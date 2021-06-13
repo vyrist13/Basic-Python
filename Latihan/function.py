@@ -1,13 +1,13 @@
-#def function():
-    #print("Saya makan")
-    #print("Saya minum")
-    #print("Saya tidur")
-#function()
+def function():
+    print("Saya makan")
+    print("Saya minum")
+    print("Saya tidur")
+function()
 
-#def nama(name):
-    #print("Nama saya",name)
-#nama("Ali")
-#nama("Badru")
+def nama(name):
+    print("Nama saya",name)
+nama("Ali")
+nama("Badru")
 
 def method(name="Tidak Tahu"):
     print("Nama saya "+name)
