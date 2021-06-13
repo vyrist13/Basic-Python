@@ -17,4 +17,4 @@ def fungsi(nama, tinggi, umur):
     print("Nama saya",nama)
     print("Tinggi saya",tinggi)
     print("Umur saya",umur)
-fungsi(umur=36)
+fungsi(umur=36,nama="Thoma",tinggi=172)
