@@ -9,6 +9,7 @@ from email.mime.base import MIMEBase
 from email import encoders, message
 from getpass import getpass
 
+#The body email
 mail_content="""Hi there,
 This is a test email using Python for Final Project.
 
@@ -26,9 +27,9 @@ password=getpass("Type your password and press enter:")
 message=MIMEMultipart()
 message["Subject"]="Final Project with Attachment"
 message["From"]=sender_email
-message["To"]=receiver_email #the subject line
+message["To"]=receiver_email 
 
-#The body and the attachments for the mail
+#The attachments for the mail
 message.attach(MIMEText(mail_content,'plain'))
 filename="receiver_list.txt"
 attachment=open("receiver_list.txt","rb")
