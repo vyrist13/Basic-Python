@@ -11,6 +11,7 @@ from getpass import getpass
 
 mail_content="""Hi there,
 This is a test email using Python for Final Project.
+
 Best regards,
 Thoma
 """
