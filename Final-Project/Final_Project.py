@@ -4,24 +4,30 @@ from email.mime.multipart import MIMEMultipart
 from getpass import getpass
 
 sender_email="toma.saputra@gmail.com"
-receiver_email="vyrist13@gmail.com"
+with open("receiver_list.txt","r") as file:
+    receiver_email=file.read().replace("\n",",")
 password=getpass("Type your password and press enter:")
 
 message=MIMEMultipart("alternative")
-message["Subject"]="multipart test"
+message["Subject"]="Final Project"
 message["From"]=sender_email
 message["To"]=receiver_email
 
 # Create the plain-text and HTML version of your message
 text="""\
     Hi there,
-
-    This message is sent from Python."""
+    This message is sent from Python
+    
+    Best regard,
+    Thoma"""
 html="""\
     <html>
     <body>
     <p>Hi there,<br>
     This message is sent from Python<br>
+    <br>
+    Best regards,<br>
+    Thoma
     </p>
     </body>
     </html>
